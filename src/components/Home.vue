@@ -1,7 +1,7 @@
 <template>
     <div class="home">
         <el-container class="home_container">
-
+ <h1 data-splitting class="homeH1">Happy birthday &lt;3</h1>
             <!-- Cake and buttons  -->
             <el-main class="home_content">
 
@@ -39,7 +39,7 @@
                 </el-row>
 
                 <!-- Video -->
-                <el-row type="flex" class="button_row" justify="center">
+                <!-- <el-row type="flex" class="button_row" justify="center">
                     <el-col :xs="16" :sm="16" :md="12" :lg="6" :xl="6">
                         <transition name="slide-fade">
                             <el-button @click="goVideo()" class="home_button" plain type="danger"
@@ -48,7 +48,7 @@
                             </el-button>
                         </transition>
                     </el-col>
-                </el-row>
+                </el-row> -->
 
                 <!-- Stories Behind -->
                 <el-row type="flex" class="button_row" justify="center">
@@ -90,6 +90,9 @@
 </template>
 
 <script>
+ import "../styles/bomb.scss";
+
+
     export default {
         name: 'Home',
         data() {
@@ -119,7 +122,7 @@
 <style scoped lang="scss">
     @import "../styles/Home.scss";
     @import "../styles/BirthdayCake.scss";
-
+   
     .home {
         position: relative;
         overflow: hidden;
@@ -129,6 +132,7 @@
         height: 100vh;
         background: #2d2929;
         position: relative;
+       flex-direction: column;
     }
 
     .home_content {
@@ -156,5 +160,6 @@
         text-align: center;
         line-height: 160px;
         width: 100vw;
+        overflow: hidden;
     }
 </style>
