@@ -22,100 +22,80 @@
 
               <el-timeline-item>
                 <el-card>
-                  <el-image :src="img2" @load="onImgLoad"></el-image>
-                  <h3>This is a photo you take when you loved your hair color and the length of your hair</h3>
-                </el-card>
-              </el-timeline-item>
-
-              <el-timeline-item>
-                <el-card>
-                  <el-image :src="img10" @load="onImgLoad"></el-image>
-                  <h3>This is a photo you took on December 2020 when you have a long hair and nice eyes till now btw </h3>
-                </el-card>
-              </el-timeline-item>
-
-              <el-timeline-item>
-                <el-card>
-                  <el-image :src="img9" @load="onImgLoad"></el-image>
-                  <h3>I like your dedicated work at Radiografer</h3>
-                </el-card>
-              </el-timeline-item>
-
-              <el-timeline-item>
-                <el-card>
-                  <el-image :src="img3" @load="onImgLoad"></el-image>
-                  <h3>This was my vitamin when i was completing my essay</h3>
-                </el-card>
-              </el-timeline-item>
-
-              <el-timeline-item>
-                <el-card>
-                  <el-image :src="img11" @load="onImgLoad"></el-image>
-                  <h3>This is a photo when sometimes you want to take care of yourself and your 'metime'</h3>
-                </el-card>
-              </el-timeline-item>
-
-              <el-timeline-item>
-                <el-card>
-                  <el-image :src="img4" @load="onImgLoad"></el-image>
-                  <h3>I kind of giggle when you randomly share this photo, you are so good to take care of yourself </h3>
-                </el-card>
-              </el-timeline-item>
-
-              <el-timeline-item>
-                <el-card>
-                  <el-image :src="img5" @load="onImgLoad"></el-image>
-                  <h3>I love your smile btw... so keep your smile everyday alright</h3>
-                </el-card>
-              </el-timeline-item>
-
-              <el-timeline-item>
-                <el-card>
-                  <el-image :src="img6" @load="onImgLoad"></el-image>
-                  <h3>When I see The Mini You, I thought was how talented you are.. like sing, play piano, and how confident you are </h3>
-                </el-card>
-              </el-timeline-item>
-
-              <el-timeline-item>
-                <el-card>
-                  <el-image :src="img7" @load="onImgLoad"></el-image>
-                  <h3>Years by years you passed your birthday, you have grown into a fine woman btw</h3>
-                </el-card>
-              </el-timeline-item>
-
-              <el-timeline-item>
-                <el-card>
-                  <el-image :src="img8" @load="onImgLoad"></el-image>
-                  <h3>Well this is a photo of us.. that day i hope it will last forever.. anyway, I am rooting for your happiness. Ganbatte Hwaiting!! </h3>
+                  <video controls autoplay muted loop width="100%">
+                    <source :src="Video" type="video/mp4">
+                  </video>
+                  <h4>還記得這裡嗎？最近的天氣真的很糟，能看到這樣的美景實屬難得！</h4>
                 </el-card>
               </el-timeline-item>
 
               <el-timeline-item>
                 <el-card>
                   <el-image :src="img1" @load="onImgLoad"></el-image>
-                  <h3>This is You and The only woman i still nervous to interact until now hahaha</h3>
+                  <h4>日落餘暉很快地將天空渲染成滿天霞紅，就跟我看到你臉紅一樣</h4>
                 </el-card>
               </el-timeline-item>
 
               <el-timeline-item>
                 <el-card>
-                  <h3>Today is as beautiful as other days, but you realize another year has gone in a blink of the eye however</h3>
-                  <h3>Do you know..? today is just special, so special to you.. That's why</h3>
-                  <h3>Let's make the best celebration ever and let me share a piece of happiness to you</h3>
-                  <h3>I made all this as a birthday present to you</h3>
-                  <h3>Thanks for being there</h3>
-                  <h3>Thanks for the friendship and relationship we made</h3>
-                  <h3>Thanks for everything</h3>
-                  <h3>I wish you all the best, May your life be at ease, May all your wishes come true and Remember..</h3>
-                  <h3>Your ambitions, you live as a free bird flying in the blue sky is because God has your back</h3>
-                  <h3>This year will be better and I hope you'll find happiness along the way, keep your spirit up, enjoy every single moment with your most beautiful smile... ahh and make it the best memory</h3>
-                  <h3>Lastly...</h3>
+                  <el-image :src="img2" @load="onImgLoad"></el-image>
+                  <h4>第一張合照，陽光耀眼奪目，太熱了還把椅子轉向😂<br>
+                    前一天還因為太興奮沒有睡好
+                  </h4>
+                </el-card>
+              </el-timeline-item>
+              <el-timeline-item>
+                <el-card>
+                  <el-image :src="img6" @load="onImgLoad"></el-image>
+                  <h4>純愛戰士！五條老師還是一樣厲害。<br>
+                    在電影的最後牽起你的手，真的好緊張...最後還去逛了夜市，然後你開車送我回家。<br>
+                    很久沒有人送我回家了，那種感覺很溫暖❤️ 謝謝你
+                  </h4>
                 </el-card>
               </el-timeline-item>
 
               <el-timeline-item>
                 <el-card>
-                  <h3>A Very Happy Birthday to You Samantha Ayu Dian Narwastu</h3>
+                  <el-image :src="img3" @load="onImgLoad"></el-image>
+                  <h4>吃完萬客後河堤散步。三月吃了三次鍋，果然還是萬客最好吃！！</h4>
+                </el-card>
+              </el-timeline-item>
+
+              <el-timeline-item>
+                <el-card>
+                  <el-image :src="img4" @load="onImgLoad"></el-image>
+                  <h4>那天問你30歲是什麼感覺啊？<br>
+                    「與別人比較永遠比不完，只要自己有持續進步就好」<br>
+                    對未來感到迷茫的我內心變得平靜許多，而我也朝著目標努力中
+                  </h4>
+                </el-card>
+              </el-timeline-item>
+
+              <el-timeline-item>
+                <el-card>
+                  <el-image :src="img5" @load="onImgLoad"></el-image>
+                  <h4>殭屍汪達😂 (有這麼恐怖嗎？)<br>我真的沒想到位置會被取消，拍謝啊。好開心你也喜歡漫威的電影，不過你愛的是驚奇隊長
+                  </h4>
+                </el-card>
+              </el-timeline-item>
+
+              <el-timeline-item>
+                <el-card>
+                  <h4>
+                    儘管我們的相遇是這麼的奇妙，我還是覺得自己很幸運可以遇見你。偷偷告訴你一個小秘密，去年我有去拜月老，而你跟上面的描述幾乎吻合。
+
+                  </h4>
+                  <h4>我不是很迷信的人，但此刻我很慶幸你有向我發訊息。(感謝蝦皮跟月老？)在我跟你說想要戴牙套、磨小門牙，抑或是體脂25%很油，你都覺得這樣很好很可愛，儘管你可能只是隨便說說的也給我增加很多自信</h4>
+                  <h4>很喜歡跟你相處時候的自己，因為可以舒服的做自己，很輕鬆、自在。好像有什麼喜怒哀樂都可以跟你説，如果你願意的話有什麼事也可以跟我分享，我也是個很好的傾聽者的</h4>
+                  <h4>未來再去更多地方走走拍照吧！</h4>
+                </el-card>
+              </el-timeline-item>
+
+              <el-timeline-item>
+                <el-card>
+                  <h4>最後，獻上我最真誠的祝福，<br>願你天天開心，心想事成<br>
+                  <span style="font-size:10px;text-align:right;display:block;font-style:italic">by ian 2022.05.30</span>
+                  </h4>
                 </el-card>
               </el-timeline-item>
 
@@ -132,17 +112,12 @@
 import Loading from 'vue-loading-overlay'
 import 'vue-loading-overlay/dist/vue-loading.css'
 
-import img1 from '../assets/sadnBeauty.jpg'
-import img2 from '../assets/sadnBeauty2.jpg'
-import img3 from '../assets/sadnIjasah.jpg'
-import img4 from '../assets/sadnMaskeran.jpg'
-import img5 from '../assets/sadnNiceSmile.jpg'
-import img6 from '../assets/sadnPast.jpg'
-import img7 from '../assets/sadnPastTransform.jpg'
-import img8 from '../assets/sadnWithMe.jpg'
-import img9 from '../assets/sadnWork.jpg'
-import img10 from '../assets/sadnBeauty3.jpg'
-import img11 from '../assets/sadnCutHair.jpg'
+import img1 from '../assets/img_01.jpg'
+import img2 from '../assets/img_02.jpg'
+import img3 from '../assets/img_03.jpg'
+import img4 from '../assets/img_04.jpg'
+import img5 from '../assets/img_05.jpg'
+import img6 from '../assets/img_06.jpg'
 
 export default {
   name: 'Messages',
@@ -158,14 +133,10 @@ export default {
       img4: img4,
       img5: img5,
       img6: img6,
-      img7: img7,
-      img8: img8,
-      img9: img9,
-      img10: img10,
-      img11: img11,
+      Video: require('../assets/video.mp4'),
       imagesLoaded: 0,
 
-      totalImages: 11,
+      totalImages: 5,
       // Loader
       loaderLoading: true,
       backgroundColor: '#2d2929',
@@ -207,5 +178,21 @@ export default {
 .back_button {
   margin-top: 15px;
   position: absolute;
+}
+.el-card {
+  background: #2d2929;
+  border: 1px solid #ebeef533;
+}
+::v-deep .el-card__body {
+  padding: 2vw;
+}
+h4 {
+  color: #fff;
+  text-align: left;
+  width: 90%;
+  margin: 5vw auto;
+}
+::v-deep.messages_timeline {
+  padding-top: 2vw;
 }
 </style>

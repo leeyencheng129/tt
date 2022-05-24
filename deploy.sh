@@ -11,8 +11,8 @@ cd dist
 
 git init
 git add -A
-git commit -m 'deploy'
+git commit -m 'deploy2'
 
 # 部署到 https://<USERNAME>.github.io/<REPO>
 git push -f https://github.com/leeyencheng129/tt.git master:gh-pages
-cd -
+cd -ß

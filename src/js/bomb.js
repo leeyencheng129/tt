@@ -3,7 +3,7 @@
 // Splitting();
 
 let particles = [];
-const colors = ["#d4af37","#d43a37","#fff","#2493fb"];
+const colors = ["#fec300","#ff6767","#fff","#01fbff"];
 function pop () {
   for (let i = 0; i < 150; i++) {
     const p = document.createElement('particule');

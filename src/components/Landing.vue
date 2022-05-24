@@ -1,11 +1,13 @@
 <template>
     <div class="landing">
         <transition name="slide-fade">
-            <h1 class="landing_text" v-if="show">{{message}}</h1>
+            <h2 class="landing_text" v-if="show">{{message}}</h2>
         </transition>
     </div>
 </template>
 <script>
+import "../styles/bomb.scss";
+import '../js/bomb.js'
     export default {
         name: 'Landing',
         data() {
@@ -60,5 +62,6 @@
         vertical-align: baseline;
        font-family: 'Noto Serif TC', serif;
        color:#fff;
+       font-size: 6vw;
     }
 </style>

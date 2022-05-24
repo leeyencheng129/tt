@@ -51,7 +51,7 @@
                 </el-row> -->
 
                 <!-- Stories Behind -->
-                <el-row type="flex" class="button_row" justify="center">
+                <!-- <el-row type="flex" class="button_row" justify="center">
                     <el-col :xs="16" :sm="16" :md="12" :lg="6" :xl="6">
                         <transition name="slide-fade">
                             <el-button @click="goStoriesBehind()" class="home_button" plain type="danger"
@@ -60,7 +60,7 @@
                             </el-button>
                         </transition>
                     </el-col>
-                </el-row>
+                </el-row> -->
             </el-main>
         </el-container>
 
@@ -90,7 +90,7 @@
 </template>
 
 <script>
- import "../styles/bomb.scss";
+
 
 
     export default {
@@ -127,7 +127,9 @@
         position: relative;
         overflow: hidden;
     }
-
+h1{
+    z-index: 99;
+}
     .home_container {
         height: 100vh;
         background: #2d2929;
@@ -153,6 +155,8 @@
         font-size: 20px;
         font-weight: bold;
         border-radius: 20px;
+        font-family: "Gloria Hallelujah", cursive;
+
     }
 
     .el-main {

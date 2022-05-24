@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import './js/bomb.js'
+
 export default {
   name: 'App'
 }
