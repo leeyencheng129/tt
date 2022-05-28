@@ -166,4 +166,13 @@ h1{
         width: 100vw;
         overflow: hidden;
     }
+
+    @media screen and (max-width:768px){
+        .button_row{
+            margin-top: 15vw;
+        }
+        .cake_row{
+            margin-top: 8vw;
+        }
+    }
 </style>

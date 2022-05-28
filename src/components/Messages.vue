@@ -22,9 +22,11 @@
 
               <el-timeline-item>
                 <el-card>
-                  <video controls autoplay muted loop width="100%">
+                  <!-- <video controls autoplay muted loop width="100%" playsinline>
                     <source :src="Video" type="video/mp4">
-                  </video>
+                     Sorry, your browser doesn't support embedded videos.
+                  </video> -->
+                   <youtube class="player" :video-id="videoId" ref="youtube" :player-vars="playerVars" ></youtube>
                   <h4>還記得這裡嗎？最近的天氣真的很糟，能看到這樣的美景實屬難得！</h4>
                 </el-card>
               </el-timeline-item>
@@ -57,7 +59,7 @@
               <el-timeline-item>
                 <el-card>
                   <el-image :src="img3" @load="onImgLoad"></el-image>
-                  <h4>吃完萬客後河堤散步。三月吃了三次鍋，果然還是萬客最好吃！！</h4>
+                  <h4>吃完萬客後河堤散步。火鍋吃來吃去果然還是萬客最好吃！！</h4>
                 </el-card>
               </el-timeline-item>
 
@@ -74,7 +76,7 @@
               <el-timeline-item>
                 <el-card>
                   <el-image :src="img5" @load="onImgLoad"></el-image>
-                  <h4>殭屍汪達😂 (有這麼恐怖嗎？)<br>我真的沒想到位置會被取消，拍謝啊。好開心你也喜歡漫威的電影，不過你愛的是驚奇隊長
+                  <h4>殭屍汪達😂 <br>(那時候看有這麼恐怖嗎？)<br>我真的沒想到位置會被取消，拍謝啊。好開心你也喜歡漫威的電影，不過你愛的是驚奇隊長
                   </h4>
                 </el-card>
               </el-timeline-item>
@@ -87,14 +89,14 @@
                   </h4>
                   <h4>我不是很迷信的人，但此刻我很慶幸你有向我發訊息。(感謝蝦皮跟月老？)在我跟你說想要戴牙套、磨小門牙，抑或是體脂25%很油，你都覺得這樣很好很可愛，儘管你可能只是隨便說說的也給我增加很多自信</h4>
                   <h4>很喜歡跟你相處時候的自己，因為可以舒服的做自己，很輕鬆、自在。好像有什麼喜怒哀樂都可以跟你説，如果你願意的話有什麼事也可以跟我分享，我也是個很好的傾聽者的</h4>
-                  <h4>未來再去更多地方走走拍照吧！</h4>
+                  <h4>未來會發生什麼事沒人知道，而我們能做的就是不要讓明天的自己後悔，讓我們好好享受當下，有機會再去更多地方走走拍照吧！</h4>
                 </el-card>
               </el-timeline-item>
 
               <el-timeline-item>
                 <el-card>
-                  <h4>最後，獻上我最真誠的祝福，<br>願你天天開心，心想事成<br>
-                  <span style="font-size:10px;text-align:right;display:block;font-style:italic">by ian 2022.05.30</span>
+                  <h4>最後，獻上我最真誠的祝福，<br>願你平安健康，每天開心<br>
+                  <span style="font-size:10px;text-align:right;display:block;font-style:italic;margin-top:5px">by ian 2022.05.30</span>
                   </h4>
                 </el-card>
               </el-timeline-item>
@@ -133,7 +135,15 @@ export default {
       img4: img4,
       img5: img5,
       img6: img6,
-      Video: require('../assets/video.mp4'),
+    //   Video: require('../assets/video.mp4'),
+      videoId : 'YxFYm-qQxaY',
+      playerVars: {
+        autoplay: 1,
+        loop: 1,
+        mute:1,
+        showinfo: 0,
+        playlist:'YxFYm-qQxaY'
+      },
       imagesLoaded: 0,
 
       totalImages: 5,
@@ -162,7 +172,8 @@ export default {
         setTimeout(() => (this.loaderLoading = false), 500)
         setTimeout(() => (this.showTimeline = true), 800)
       }
-    }
+    },
+   
   }
 }
 </script>
@@ -170,7 +181,7 @@ export default {
 <style scoped>
 .messages_timeline {
   width: 80%;
-  height: 83vh;
+  height: 50vw;
   margin-left: auto;
   margin-right: auto;
 }
@@ -194,5 +205,11 @@ h4 {
 }
 ::v-deep.messages_timeline {
   padding-top: 2vw;
+}
+
+::v-deep iframe {
+  width: 100% ;
+  height: 38vw;
+  
 }
 </style>
